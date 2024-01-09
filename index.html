@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/de6dc9fc6e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-login">
+        <div class="left">
+            
+        </div>
+        <div class="right">
+            <div class="logo">
+                <img src="images/LOGO-GRANDE (1).png" alt="Logo Glamour">
+            </div>
+            <div class="container-formulario">
+                <div class="titulo">
+                    <h1>Crie uma conta</h1>
+                </div>
+                <div class="formulario">
+                    <form method="post" id="formValidator">
+                        <label for="name">
+                            Seu nome:
+                            <input type="text" name="name" id="name" placeholder="Digite seu nome completo" maxlength="60" data-rules="required">
+                        </label>
+                        <label for="email">
+                            Seu e-mail:
+                            <input type="text" name="email" id="email" placeholder="Digite seu melhor e-mail">
+                        </label>
+                        <label for="senha">
+                            Seu senha:
+                            <div class="password">
+                                <input type="password" name="senha" id="senha" placeholder="Crie uma senha" maxlength="8"><i id="showPass" class="fa-solid fa-eye"></i>
+                            </div>
+                        </label>
+                        <input type="submit" value="cadastrar">
+                    </form>
+                    <div class="login">
+                        <p>Já tem uma conta? <a href="">Faça o Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
