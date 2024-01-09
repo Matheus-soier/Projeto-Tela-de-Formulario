@@ -25,16 +25,16 @@
                     <form method="post" id="formValidator">
                         <label for="name">
                             Seu nome:
-                            <input type="text" name="name" id="name" placeholder="Digite seu nome completo" maxlength="60" data-rules="required">
+                            <input type="text" name="name" id="name" placeholder="Digite seu nome completo" maxlength="60" data-rules="required|min=5">
                         </label>
                         <label for="email">
                             Seu e-mail:
-                            <input type="text" name="email" id="email" placeholder="Digite seu melhor e-mail">
+                            <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail" data-rules="required|email">
                         </label>
                         <label for="senha">
                             Seu senha:
                             <div class="password">
-                                <input type="password" name="senha" id="senha" placeholder="Crie uma senha" maxlength="8"><i id="showPass" class="fa-solid fa-eye"></i>
+                                <input type="password" name="senha" id="senha" placeholder="Crie uma senha" maxlength="12" data-rules="required|min=8"><i id="showPass" class="fa-solid fa-eye"></i>
                             </div>
                         </label>
                         <input type="submit" value="cadastrar">

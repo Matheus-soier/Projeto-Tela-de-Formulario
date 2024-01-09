@@ -78,14 +78,14 @@ body {
 .formulario input {
     padding: 8px;
     border-radius: 0px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.334);
     outline: 0;
 }
 
 .password {
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.334);
     padding: 0 8px 0 0;
 }
 
@@ -123,4 +123,13 @@ body {
 
 .login a {
     color: #46A66D;
+}
+
+.error {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
 }
